@@ -1,0 +1,29 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "pwsh": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "commandLineArgs": "-NoLogo -Command \"Import-Module '.\\MyTestModule2.dll';Test-SampleCmdlet 7;Start-Sleep -Seconds 5;\"",
+      "workingDirectory": ".\\bin\\Debug\\net7.0\\publish\\"
+    },
+    "Project exec": {
+      "commandName": "Project"
+    },
+    "pwsh contained": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "commandLineArgs": "-NoLogo -Command \"Import-Module '.\\MyTestModule2.dll';Test-SampleCmdlet 7;Start-Sleep -Seconds 5;\"",
+      "workingDirectory": ".\\bin\\Debug\\net7.0\\publish\\win-x64\\"
+    },
+    "portable": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "commandLineArgs": "-NoLogo -Command \"Import-Module '.\\MyTestModule2.dll';cd..;Test-SampleCmdlet 7;Start-Sleep -Seconds 5;\"",
+      "workingDirectory": ".\\bin\\Debug\\net7.0\\publish\\portable"
+    }
+  }
+}
